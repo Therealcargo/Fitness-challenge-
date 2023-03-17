@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daily Fitness Challenge</title>
+  </head>
+  <body>
+    <h1>Daily Fitness Challenge:</h1>
+    <p id="challenge"></p>
+    
+    <script>
+      // Define an array of fitness challenges
+      const fitnessChallenges = [
+        "Do 20 push-ups",
+        "Go for a 30-minute walk",
+        "Complete a 10-minute yoga routine",
+        "Do 50 jumping jacks",
+        "Run 1 mile",
+        "Complete a 15-minute core workout",
+        "Take a fitness class at your local gym",
+        "Do 3 sets of 10 squats",
+        "Complete a 20-minute cardio workout",
+        "Do a 5-minute stretching routine",
+        "Go for a bike ride",
+        "Do 30-second plank holds for 5 minutes"
+      ];
+      
+      // Generate a random challenge from the array
+      const randomIndex = Math.floor(Math.random() * fitnessChallenges.length);
+      const randomChallenge = fitnessChallenges[randomIndex];
+      
+      // Display the challenge on the HTML page
+      document.getElementById("challenge").innerHTML = randomChallenge;
+    </script>
+  </body>
+</html>
